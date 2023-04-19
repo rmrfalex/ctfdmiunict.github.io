@@ -1,48 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Capture The Flag 2023</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js"></script>
+	<title>Capture The Flag 2023</title>
 </head>
 <body>
-    
-    <div class="container">
-        
-        <div class="stack" style="--stacks: 3;">
-          <span style="--index: 0;">Capture the Flag</span>
-          <span style="--index: 1;">Capture the Flag</span>
-          <span style="--index: 2;">Capture the Flag</span>
-          
-        </div>
-        <span>Powered by dmi</span>
-    </div>
-    <div id="spam">
-        <div id="spamSinistro" class="spamCont">
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-        </div>
-        <img src="assets/TheManInBlack.png" alt="" id="locandina">
-        <div class="spamCont">
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-            <a class="form" href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform?usp=sf_link">ISCRIVITI</a>
-        </div>
-        
-    </div>
-    <div id="terminal">
-        <p id="typeText"></p> 
-        
-    </div>
-    
-    
+	<!-- Navbar -->
+	<nav class="navbar ">
+		<div class="navbar__content flex">
+			<div class="navbar__logo text-white">
+				Capture the Flag
+			</div>
+			<ul class="navbar__menu">
+				<li class="navbar__menu-item">
+					<a href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+				<!-- Work in progress -->
+				<!--
+					<li class="navbar__menu-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"
+						>
+						</path>
+					</svg>
+					</li>
+				-->
+			</ul>
+		</div>
+	</nav>
+	<!--//Navbar -->
+
+	<!-- Content -->
+	<main class="content">
+		<div class="hero flex">
+			<div class="hero__title-section flex">
+				<div class="hero__title"> Capture the Flag </div>
+				<div class="hero__edition-numb">
+					VI edizione
+				</div>
+				<div class="hero__date">
+					01 Giugno 2023
+				</div>
+			</div>
+		</div>
+
+		<section class="section f-section descrition font-family-2">
+			<p class="section__paragraph">
+				Per anni il <b>Dipartimento di Matematica ed Informatica dell'Università di Catania</b>
+				ha avuto il privilegio ed il piacere di ospitare l'evento della <b>Capture the Flag</b>.
+				Dopo quello che sembrava un interminabile periodo di inattività, ad oggi torniamo
+				in grande stile con <b>4 challenge tutte nuove</b>, adatte sia ai novizi curiosi che
+				agli esperti alla ricerca di nuovi stimoli.
+			</p>
+			<p class="section__paragraph">
+				Diversi <b>Red Team</b>, raggruppati in base alla difficoltà della challenge,
+				si sfideranno in competizione di stampo <b>Jeopardy</b> per ottenere le tanto ambite flag.<br>
+				<b>Parole d'ordine: impegno, curiosità e passione</b>. Questo il mix vincente che porterà il team più
+				agguerrito alla vittoria... ma <b>attenzione agli avversari!</b> Non sia mai che decidano di mettervi
+				i bastoni tra le ruote!
+			</p>
+			<p class="section__paragraph">
+				L'evento <b>si svolgerà in dipartimento</b> ed le iscrizioni sono <b>aperte a tutti</b>, studenti universitari e non,
+				iscritti alla CyberChallange e semplici curiosi. <b>3 ore</b> di puro divertimento e sfida vi attendono.
+				<b>Non perdete l'occasione di mettere alla prova le vostre abilità</b> e di conoscere nuovi amici!
+			</p>
+			<p class="section__paragraph">
+				Per iscriversi basta compilare il form che trovate al link qui sotto.
+				<b>Non ci sono costi di partecipazione</b>, ma <b>è necessario portare con sé il proprio portatile</b>.
+				<b>Vi aspettiamo numerosi!</b>
+			</p>
+
+			<div class="subscribe-section">
+				<center>
+					<a
+						class="subscribe-btn text-white"
+						target="_blank"
+						href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform"
+					>
+						Iscriviti
+					</a>
+				</center>
+			</div>
+		</section>
+
+		<section class="section s-section">
+			<div class="s-section__description font-family-2">
+				<h3 class="section__title text-primary"> Le sfide </h3>
+				<ul class="section__challenge-list">
+					<li>
+						<h4 class="section__subtitle text-primary">Script Kiddie - Novizio</h4>
+						<p class="section__challenge-list-description">
+							Dedicata ai partecipanti che skill-minime, che vogliono
+							provare a mettere alla prova le proprie abilità.
+						</p>
+					</li>
+					<li>
+						<h4 class="section__subtitle text-primary">Pwner - Intermedio</h4>
+						<p class="section__challenge-list-description">
+							Per coloro che hanno già qualche esperienza
+							e sanno come sfruttare le vulnerabilità più note dei sistemi operativi.
+						</p>
+					</li>
+					<li>
+						<h4 class="section__subtitle text-primary">Hacker - Avanzato</h4>
+						<p class="section__challenge-list-description">
+							Sfide complesse e ci diversi trabocchetti,
+							richiede tempo e abilità di riflessione.
+						</p>
+					</li>
+					<li>
+						<h4 class="section__subtitle text-primary">U0M0 N3R0 - Estremo</h4>
+						<p class="section__challenge-list-description">
+							Un unica e complessa sfida, ottenere i permessi di root
+							all'interno di un sistema speciale, richiede abilità e conoscenze avanzate.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="s-section__image">
+				<img src="./assets/images/TheManInBlack.png" alt="The man in black locandina"/>
+			</div>
+		</section>
+
+		<section class="section t-section font-family-2">
+			<div class="t-section__description text-white">
+				<h3 class="section__title text-primary">Ricapitolando...</h3>
+				<ul class="section__paragraph recap-list">
+					<li>
+						<b>Quando?</b> L'1 Giugno 2023 <!--, dalle 9:00 alle 12:00 -->
+					</li>
+					<li>
+						<b>Dove?</b> Dipartimento di Matematica ed Informatica, Università degli Studi di Catania
+					</li>
+					<li>
+						<b>Quanto?</b> Gratis!
+					</li>
+					<li>
+						<b>Per chi?</b> Tutti, studenti universitari e non
+					</li>
+					<li>
+						<b>Perché?</b> Perché è divertente e perché è un'ottima occasione per mettere alla prova le proprie abilità e fare amicizia
+					</li>
+					<li>
+						<b>Come?</b> Iscrivendosi al link qui sotto
+					</li>
+					<li>
+						<b>Mi raccomando, porta con te:</b> il tuo laptop e la tua passione per la sicurezza informatica!
+					</li>
+				</ul>
+			</div>
+			<div class="subscribe-section">
+				<center>
+					<a
+						class="subscribe-btn text-white"
+						target="_blank"
+						href="https://docs.google.com/forms/d/e/1FAIpQLSfYEHBDHotKmV4l8v2_dXOv3AllO13ygDTFoZS7vQqkKqp09A/viewform"
+					>
+						Iscriviti
+					</a>
+				</center>
+			</div>
+		</section>
+	</main>
+	<!--//Content -->
+	<footer class="footer text-white font-family-2">
+		<b>Contributors</b>
+		<ul class="footer__contributors">
+			<li>
+				<a href="https://github.com/AlexMatter1512" target="_blank">
+					Alessio Matarazzo
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/AndrewDarnall" target="_blank">
+					Andrew Ryan Darnal
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/Lupix111" target="_blank">
+					Emanuele Carlino
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/makapx" target="_blank">
+					Martina Parlavecchio
+				</a>
+			</li>
+		</ul>
+
+		<p class="footer__info">
+			Work in progess.Le informazioni sull'evento sono soggette a variazioni.
+		</p>
+		<p class="footer__info">
+			Ti piace questo sito e vuoi contribuire? Visita il nostro
+			<a class="text-primary" href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">repository</a>
+			su GitHub!<br>
+		</p>
+	</footer>
 </body>
 </html>
