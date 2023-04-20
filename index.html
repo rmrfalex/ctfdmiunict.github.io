@@ -15,7 +15,7 @@
 			<div class="navbar__logo text-white">
 				Capture the Flag
 			</div>
-			<ul class="navbar__menu">
+			<ul class="navbar__menu show-on-widescreen">
 				<li class="navbar__menu-item">
 					<a href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -28,19 +28,46 @@
 						</svg>
 					</a>
 				</li>
-				<!-- Work in progress -->
-				<!--
-					<li class="navbar__menu-item">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-						<path
-							d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"
-						>
-						</path>
-					</svg>
-					</li>
-				-->
+				<li class="navbar__menu-item">
+					<a class="telegram-logo" href="https://t.me/+z9fzGWxfV0cyYTdk" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
 			</ul>
 		</div>
+
+		<div class="mobile-toolbar">
+			<ul class="flex">
+				<li class="navbar__menu-item">
+					<a href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li class="navbar__menu-item">
+					<a class="telegram-logo" href="https://t.me/+z9fzGWxfV0cyYTdk" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
 	</nav>
 	<!--//Navbar -->
 
@@ -50,7 +77,7 @@
 			<div class="hero__title-section flex">
 				<div class="hero__title"> Capture the Flag </div>
 				<div class="hero__edition-numb">
-					VI edizione
+					VII edizione
 				</div>
 				<div class="hero__date">
 					01 Giugno 2023
@@ -68,19 +95,20 @@
 			</p>
 			<p class="section__paragraph">
 				Diversi <b>Red Team</b>, raggruppati in base alla difficoltà della challenge,
-				si sfideranno in competizione di stampo <b>Jeopardy</b> per ottenere le tanto ambite flag.<br>
+				si sfideranno in una competizione di stampo <b>Jeopardy</b> per ottenere le tanto ambite flag.<br>
 				<b>Parole d'ordine: impegno, curiosità e passione</b>. Questo il mix vincente che porterà il team più
 				agguerrito alla vittoria... ma <b>attenzione agli avversari!</b> Non sia mai che decidano di mettervi
 				i bastoni tra le ruote!
 			</p>
 			<p class="section__paragraph">
-				L'evento <b>si svolgerà in dipartimento</b> ed le iscrizioni sono <b>aperte a tutti</b>, studenti universitari e non,
+				L'evento <b>si svolgerà in dipartimento</b> e le iscrizioni sono <b>aperte a tutti</b>, studenti universitari e non,
 				iscritti alla CyberChallange e semplici curiosi. <b>3 ore</b> di puro divertimento e sfida vi attendono.
 				<b>Non perdete l'occasione di mettere alla prova le vostre abilità</b> e di conoscere nuovi amici!
 			</p>
 			<p class="section__paragraph">
 				Per iscriversi basta compilare il form che trovate al link qui sotto.
 				<b>Non ci sono costi di partecipazione</b>, ma <b>è necessario portare con sé il proprio portatile</b>.
+				<b><a href="https://t.me/+z9fzGWxfV0cyYTdk" target="_blank" class="text-primary">Unitevi al gruppo Telegram dell'evento</a></b> per rimanere aggiornati sulle ultime novità.
 				<b>Vi aspettiamo numerosi!</b>
 			</p>
 

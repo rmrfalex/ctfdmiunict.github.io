@@ -22,6 +22,7 @@
   --primary: #bf0d0d;
   --primary-dark: #8c0d0d;
   --text-primary-white: #fefefe;
+  --telegram: #229ed9;
 }
 
 
@@ -45,12 +46,17 @@ body{
   display: flex;
 }
 
+.show-on-widescreen{
+  display: none;
+}
+
 .text-white{
   color: var(--text-primary-white);
 }
 
 .text-primary{
   color: var(--primary);
+  text-decoration: none;
 }
 
 .font-family-1{
@@ -105,6 +111,22 @@ body{
   transform: scale(1.5);
 }
 
+.mobile-toolbar{
+  background-color: var(--secondary-gray);
+  height: 48px;
+  padding: 0 1rem;
+}
+
+.mobile-toolbar ul {
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.telegram-logo:hover svg{
+  fill: var(--telegram);
+}
+
 /** Hero **/
 .content {
   margin-top: 6rem;
@@ -114,6 +136,7 @@ body{
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 0 1rem;
 }
 
 .hero__title-section{
@@ -246,6 +269,15 @@ body{
 
 /** Media queries **/
 @media screen and (min-width: 768px){
+
+  .show-on-widescreen{
+    display: block;
+  }
+
+  .mobile-toolbar{
+    display: none;
+  }
+
   .section{
     padding: 0 8rem;
   }
