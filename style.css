@@ -127,6 +127,18 @@ body{
   fill: var(--telegram);
 }
 
+/** Countdown **/
+#countdown {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#countdown b {
+  font-weight: 500;
+  color: var(--primary);
+}
+
 /** Hero **/
 .content {
   margin-top: 6rem;
@@ -159,8 +171,9 @@ body{
   font-size: 2rem;
 }
 
-.hero__date{
-  font-size: 1.5rem;
+.hero__title-section .hero__date{
+  font-size: 2rem;
+  color: var(--primary);
 }
 
 /** Subscribe button **/
@@ -288,6 +301,7 @@ body{
 
  .s-section__description{
   padding-right: 2rem;
+  flex: 2;
  }
 
  .s-section__image img{
