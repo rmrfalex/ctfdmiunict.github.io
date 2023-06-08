@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js"></script>
+	<title>Capture The Flag 2023</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar ">
+		<div class="navbar__content flex">
+			<div class="navbar__logo text-white">
+				Capture the Flag
+			</div>
+			<ul class="navbar__menu show-on-widescreen">
+				<li class="navbar__menu-item">
+					<a href="./index.html" target="_self">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M12.74 2.32a1 1 0 0 0-1.48 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1 1 1 0 0 0-.26-.68z"></path>
+						</svg>
+					</a>
+				</li>
+				<li class="navbar__menu-item">
+					<a href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li class="navbar__menu-item">
+					<a class="telegram-logo" href="https://t.me/+z9fzGWxfV0cyYTdk" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="mobile-toolbar">
+			<ul class="flex">
+				<li class="navbar__menu-item">
+					<a href="./index.html" target="_self">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M12.74 2.32a1 1 0 0 0-1.48 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1 1 1 0 0 0-.26-.68z"></path>
+						</svg>
+					</a>
+				</li>
+				<li class="navbar__menu-item">
+					<a href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li class="navbar__menu-item">
+					<a class="telegram-logo" href="https://t.me/+z9fzGWxfV0cyYTdk" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+							>
+							</path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+	<!--//Navbar -->
+
+	<!-- Content -->
+	<main class="content">
+		<div class="hero flex">
+			<div class="hero__title-section flex">
+				<div class="hero__title"> Capture the Flag </div>
+				<div class="hero__edition-numb">
+					VII edizione
+				</div>
+				<div class="hero__date">
+					12 Giugno 2023
+					<div class="hero__datetime">
+						dalle 14 alle 17
+					</div>
+				</div>
+				<div id="countdown"></div>
+			</div>
+		</div>
+
+		<hr>
+		<section class="section last-minute-info f-section font-family-2">
+			<h3 class="section__title text-primary text-center">
+				Avvisi
+			</h3>
+			<p class="section__paragraph" style="text-align: center;">
+				<ul class="section__faq-list">
+					<li>
+						<h4 class="section__subtitle text-primary">
+							Richiesta del documento di identità
+						</h4>
+						<p class="section__faq-list-description">
+							Al fine di garantire il corretto svolgimento della competizione è necessario
+							che partecipanti e spettatori forniscano un documento di identità valido.
+						</p>
+					</li>
+				</ul>
+			</p>
+		</section>
+		
+
+		<hr>
+		<section class="section f-section font-family-2 section-faq">
+			<h3 class="section__title text-primary text-center">
+				FAQ
+			</h3>
+			<ul class="section__faq-list">
+				<li>
+					<h4 class="section__subtitle text-primary">
+						Come mai devo fornire il mio documento di identità?
+					</h4>
+					<p class="section__faq-list-description">
+						Ci occorre per identificare univoamente i partecipanti e gli spettatori.
+					</p>
+				</li>
+
+				<li>
+					<h4 class="section__subtitle text-primary">
+						È possibile iscriversi oltre la data di scadenza?
+					</h4>
+					<p class="section__faq-list-description">
+						La data di scadenza è stata fissata per permetterci di organizzare al meglio
+						l'evento e garantire la migliore esperienza possibile.
+						Non ci è possibile accettare iscrizioni oltre la data di scadenza.
+					</p>
+				</li>
+
+				<li>
+					<h4 class="section__subtitle text-primary">
+						Posso farmi aiutare da spettatori o altri esterni alla competizione?
+					</h4>
+					<p class="section__faq-list-description">
+						La competizione è riservata ai soli partecipanti iscritti.
+						I partecipanti scoperti a ricevere aiuto da spettatori o altri esterni alla competizione
+						verranno squalificati.
+					</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<!--//Content -->
+	<footer class="footer text-white font-family-2">
+		<b>Contributors</b>
+		<ul class="footer__contributors">
+			<li>
+				<a href="https://github.com/AlexMatter1512" target="_blank">
+					Alessio Matarazzo
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/AndrewDarnall" target="_blank">
+					Andrew Ryan Darnall
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/Lupix111" target="_blank">
+					Emanuele Carlino
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/makapx" target="_blank">
+					Martina Parlavecchio
+				</a>
+			</li>
+		</ul>
+
+		<p class="footer__info">
+			Work in progess.Le informazioni sull'evento sono soggette a variazioni.
+		</p>
+		<p class="footer__info">
+			Ti piace questo sito e vuoi contribuire? Visita il nostro
+			<a class="text-primary" href="https://github.com/ctfdmiunict/ctfdmiunict.github.io" target="_blank">repository</a>
+			su GitHub!<br>
+		</p>
+	</footer>
+</body>
+</html>

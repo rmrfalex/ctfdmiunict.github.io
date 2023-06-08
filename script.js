@@ -23,7 +23,7 @@ const createCountdown = () => {
     return;
   }
 
-  const eventDate = new Date("June 12, 2023 00:00:00").getTime();
+  const eventDate = new Date("June 12, 2023 14:00:00").getTime();
 
   setInterval(() => {
     let currentDate = new Date().getTime();
