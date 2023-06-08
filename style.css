@@ -315,8 +315,18 @@ hr {
     display: none;
   }
 
+  .navbar__content {
+    height: 52px;
+  }
+
   .section{
     padding: 0 8rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .section__subtitle{
+    font-size: 1.5rem;
   }
 
  .s-section{
@@ -337,13 +347,39 @@ hr {
   padding-bottom: 4rem;
  }
 
+  .subscribe-section .subscribe-btn{
+    font-size: 1.8rem;
+  }
+
   .section__challenge-list-description{
     margin-left: 1rem;
+    font-size: 1.2rem;
   }
 
   .last-minute-info, .section-faq {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .recap-list{
+    font-size: 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 6rem;
+  }
+
+  .hero__edition-numb,
+  .hero__title-section .hero__date{
+    font-size: 3rem;
+  }
+
+  #countdown, .hero__title-section .hero__datetime{
+    font-size: 2rem;
+  }
+
+  .footer__contributors{
+    font-size: 1.2rem;
   }
 }
 
