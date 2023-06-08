@@ -19,6 +19,7 @@
   --font-family-2 : "Ubuntu", sans-serif;
   --primary-gray: #1e1e1e;
   --secondary-gray: #282a2d;
+  --light-gray: #eaeaea;
   --primary: #bf0d0d;
   --primary-dark: #8c0d0d;
   --text-primary-white: #fefefe;
@@ -33,17 +34,26 @@ html, body, * {
   box-sizing: border-box;
 }
 
+body{
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
 }
 
-body{
-  font-size: 14px;
+hr {
+  margin: 2rem 6rem;
+  border: var(--light-gray) solid 1px;
 }
 
 /** Helpers **/
 .flex {
   display: flex;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .show-on-widescreen{
@@ -171,9 +181,14 @@ body{
   font-size: 2rem;
 }
 
-.hero__title-section .hero__date{
+.hero__title-section .hero__date,
+.hero__title-section .hero__datetime{
   font-size: 2rem;
   color: var(--primary);
+}
+
+.hero__title-section .hero__datetime{
+  font-size: 1.3rem;
 }
 
 /** Subscribe button **/
@@ -219,13 +234,22 @@ body{
   text-transform: uppercase;
 }
 
-.section__challenge-list{
+.section__challenge-list,
+.section__faq-list{
   list-style: none;
 }
 
 .section__challenge-list-description{
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
+}
+
+.section__faq-list-description{
+  margin-bottom: 1rem;
+}
+
+.section__faq-list li {
+  margin-bottom: 1.5rem;
 }
 
 .s-section__description{
@@ -316,4 +340,18 @@ body{
   .section__challenge-list-description{
     margin-left: 1rem;
   }
+
+  .last-minute-info, .section-faq {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+.last-minute-info, .section-faq{
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.last-minute-info .section__title, .section-faq .section__title{
+  margin-bottom: 2rem;
 }
